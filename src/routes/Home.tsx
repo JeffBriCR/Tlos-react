@@ -2,6 +2,7 @@
 import { jsx, Styled } from 'theme-ui'
 import useDemo from 'hooks/useDemo'
 import DemoComponent from 'components/DemoComponent'
+import HolaComponent from 'components/HolaComponent'
 
 export default function Home() {
   const data = useDemo()
@@ -10,6 +11,7 @@ export default function Home() {
       <Styled.h1>Home</Styled.h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
       <DemoComponent />
+      <HolaComponent />
     </div>
   )
 }
